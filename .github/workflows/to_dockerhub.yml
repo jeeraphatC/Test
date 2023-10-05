@@ -13,9 +13,9 @@ on:
   workflow_dispatch:
     inputs:
       reason:
-        description: 'Reason for manual run'
+        description: "Reason for manual run"
         required: true
-        default: 'Manual trigger'
+        default: "Manual trigger"
 
 jobs:
   push_to_registry:
@@ -28,7 +28,7 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
         with:
-          username: Lunstrae
+          username: lunstrae
           password: dckr_pat_8dTGKtc7ZcPYrB8smdBnwccij38
 
       - name: Extract metadata (tags, labels) for Docker
